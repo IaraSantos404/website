@@ -1,0 +1,30 @@
+.nav_container ul {
+    list-style: none;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #333;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav_container ul li {
+    
+    cursor: pointer;
+}
+
+.logoSescomp{
+    padding-top: 0.5em;
+}
+
+.button button{
+    color: #ffffff;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
