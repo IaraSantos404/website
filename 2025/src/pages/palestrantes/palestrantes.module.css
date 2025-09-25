@@ -27,7 +27,7 @@
 }
 
 .main .header > p{
-  color: var(--Gray-scale-500, #666);
+  color: var(--Gray-scale-500, white);
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;

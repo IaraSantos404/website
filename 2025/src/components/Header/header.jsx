@@ -22,14 +22,13 @@ export default function Header() {
 
             <ul className={styles.nav_links}>
                 <li onClick={() => navigate("/")}>Início</li>
-                <li><a target="__blank" href="https://wa.me/+5574988757145">Patrocinadores</a></li>
+                <li><a target="__blank" href="#patrocinadores">Patrocinadores</a></li>
                 <li><a target="__blank" href="https://sescomp.com.br/2024/">Programação</a></li>
                 <li className={styles.button}>
                     <a target="__blank" href="https://www.even3.com.br/viii-sescomp-573076">
                         <button>Inscreva-se</button>
                     </a>
                 </li>
-                {/* <li>Loja</li> */}
                 <li onClick={() => navigate("/palestrantes")}>Palestrantes</li>
                 <li><a target="__blank" href="https://sescomp.com.br/2024/"> Edições Anteriores</a></li>
             </ul>
@@ -59,17 +58,15 @@ export default function Header() {
             </div>
             <ul>
                 <li onClick={() => navigate("/")}>Início</li>
-                <li>Patrocinadores</li>
-                <li>Programação</li>
-                <li>
-                <a target="__blank" href="https://www.even3.com.br/viii-sescomp-573076">
-                    <button className={styles.mobileButton}>Inscreva-se</button>
-                </a>
+                <li><a target="__blank" href="#patrocinadores">Patrocinadores</a></li>
+                <li><a target="__blank" href="https://sescomp.com.br/2024/">Programação</a></li>
+                <li className={styles.button}>
+                    <a target="__blank" href="https://www.even3.com.br/viii-sescomp-573076">
+                        <button>Inscreva-se</button>
+                    </a>
                 </li>
-                <li>Loja</li>
                 <li onClick={() => navigate("/palestrantes")}>Palestrantes</li>
-                <li>Manual</li>
-                <li>Edições Anteriores</li>
+                <li><a target="__blank" href="https://sescomp.com.br/2024/"> Edições Anteriores</a></li>
             </ul>
         </div>
         </header>
