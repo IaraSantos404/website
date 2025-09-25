@@ -1,0 +1,46 @@
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  gap: 10px;
+  width: 264px;
+  min-height: 220px;    
+  box-sizing: border-box;
+  padding: 16px;      
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  padding: 0;               
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--Verde4, #2B784A);
+  color: white;
+  flex-shrink: 0;
+}
+
+.icon *{
+  font-size: 30px;
+}
+
+.title{
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.description{
+  color: #525252;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
