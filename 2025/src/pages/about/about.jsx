@@ -18,7 +18,7 @@ export default function About() {
   ]
   return (
     <>
-      <section id={Styles.about} className={Styles.about}>
+      <section id="about" className={Styles.about}>
         <div className={Styles.aboutContainer}>
           <h1>O QUE É A SESCOMP</h1>
           <div className={Styles.infos}>

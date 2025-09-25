@@ -1,0 +1,119 @@
+
+#footer {
+  color: black;
+  padding: 40px 20px 20px 20px;
+  font-family: Poppins;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logoEndereco p{
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: -0.14px;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.nav h3,
+.links h3,
+.social h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.nav ul,
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li,
+.links ul li {
+  margin-bottom: 8px;
+}
+
+.nav ul li a,
+.links ul li a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+   color: var(--Gray-scale-800, #333);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 21px */
+  letter-spacing: -0.14px;
+}
+
+.nav ul li a:hover,
+.links ul li a:hover {
+  color: var(--rosa-pink);
+}
+
+.social .icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social .icons div{
+  background: linear-gradient(90deg, #F14D7C 0%, #FE8542 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social .icons a {
+  font-size: 20px;
+  transition: color 0.3s ease;
+  color: white;
+  padding: 10px 10px 5px 10px;
+}
+
+.social .icons a:hover {
+  color: #fff;
+}
+
+/* Rodapé inferior */
+.copy {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social .icons {
+    justify-content: center;
+  }
+}

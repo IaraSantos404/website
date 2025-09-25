@@ -1,33 +1,78 @@
-import Button from '../Button/button'
-import styles from './header.module.css'
-import LogoSescomp from "../../assets/logosescomp.svg"
-import LogoUfc from "../../assets/logo ufc.svg"
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import styles from "./header.module.css";
+import LogoSescomp from "../../assets/logosescomp.svg";
+import LogoUfc from "../../assets/logo ufc.svg";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-export default function Header(){
-    return(
-        <>
-            <header id={styles.header}>
-                
-                {/* <Button texto='Submeter Artigo' className={styles.mobileSubmit}/> */}
-                
-                <nav className={`${styles.nav_container}`}>
-                    <ul>
-                        <li><img src={LogoSescomp} alt="Logo da sescomp" className={styles.logoSescomp} /></li>
-                        
-                        <li>Início</li>
-                        <li>Patrocinadores</li>
-                        <li>Programação</li>
-                        <li className={styles.button}>
-                            <button>Inscreva-se</button>
-                        </li>
-                        <li>Loja</li>
-                        <li>Palestrantes</li>
-                        <li>Manual</li>
-                        <li>Edições Anteriores</li>
-                        <li><img src={LogoUfc} alt="Logo da UFC" className={styles.logoUfc} /></li>
-                    </ul>
-                </nav>
-            </header>
-        </>
-    )
+export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
+
+    return (
+    <>
+        <header id={styles.header}>
+            <nav className={styles.nav_container}>
+        
+            <img
+            src={LogoSescomp}
+            alt="Logo da sescomp"
+            className={styles.logoSescomp}
+            />
+
+            <ul className={styles.nav_links}>
+                <li onClick={() => navigate("/")}>Início</li>
+                <li><a target="__blank" href="https://wa.me/+5574988757145">Patrocinadores</a></li>
+                <li><a target="__blank" href="https://sescomp.com.br/2024/">Programação</a></li>
+                <li className={styles.button}>
+                    <a target="__blank" href="https://www.even3.com.br/viii-sescomp-573076">
+                        <button>Inscreva-se</button>
+                    </a>
+                </li>
+                {/* <li>Loja</li> */}
+                <li onClick={() => navigate("/palestrantes")}>Palestrantes</li>
+                <li><a target="__blank" href="https://sescomp.com.br/2024/"> Edições Anteriores</a></li>
+            </ul>
+
+            <a target="__blank" href="https://www.campusrussas.ufc.br/">
+                <img
+                src={LogoUfc}
+                alt="Logo da UFC"
+                className={styles.logoUfc}
+                />
+            </a>
+            
+
+
+            <div
+            className={styles.hamburger}
+            onClick={() => setMenuOpen(true)}
+            >
+            <FaBars color="#F14D7C"/>
+            </div>
+        </nav>
+
+    
+        <div className={`${styles.sideMenu} ${menuOpen ? styles.open : ""}`}>
+            <div className={styles.closeBtn} onClick={() => setMenuOpen(false)}>
+            <FaTimes />
+            </div>
+            <ul>
+                <li onClick={() => navigate("/")}>Início</li>
+                <li>Patrocinadores</li>
+                <li>Programação</li>
+                <li>
+                <a target="__blank" href="https://www.even3.com.br/viii-sescomp-573076">
+                    <button className={styles.mobileButton}>Inscreva-se</button>
+                </a>
+                </li>
+                <li>Loja</li>
+                <li onClick={() => navigate("/palestrantes")}>Palestrantes</li>
+                <li>Manual</li>
+                <li>Edições Anteriores</li>
+            </ul>
+        </div>
+        </header>
+    </>
+    );
 }

@@ -4,6 +4,37 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* button:hover{
+  transform: scaleY(1.05);
+  transition: all 0.3s ease;
+} */
+
+button{
+   transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-4px);
+}
+
+/* animação sutil de pulo contínuo */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+button.bounce {
+  animation: bounce 2s infinite ease-in-out;
+}
+
 :root {
   --azul-escuro: #4828AB;
   --verde: #2B784A;

@@ -1,10 +1,12 @@
-import Home from "./pages/home/home"
+import Header from "./components/Header/header"
+import AppRoutes from "./routes"
 
 function App() {
 
   return (
     <>
-      <Home />
+     
+      <AppRoutes />
     </>
   )
 }
