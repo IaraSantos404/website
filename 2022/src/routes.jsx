@@ -4,7 +4,7 @@ import Palestrantes from "./pages/palestrantes/palestrantes"
 
 export default function AppRoutes(){
   return(
-    <BrowserRouter basename="/website/2025/">
+    <BrowserRouter basename="/2025/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/palestrantes" element={<Palestrantes />} />
