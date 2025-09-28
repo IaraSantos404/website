@@ -6,19 +6,23 @@
 .background{
   height: 80vh;
   background: linear-gradient(180deg, #000043 0.13%, #4BC9F1 99.87%); 
+  position: relative;
 }
 .background p{
   color: #FFF;
   font-family: Montserrat;
-  font-size: 128px;
+  font-size: 132px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -2.56px;
-  width: 80%;
+  width: 55%;
   margin: auto;
   padding-top: 5vh;
-  float: right;
+  position: absolute;
+  bottom: 0.8em;
+  right: 0;
+ 
 }
 
 .background span{

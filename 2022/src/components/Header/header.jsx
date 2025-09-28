@@ -22,8 +22,8 @@ export default function Header() {
 
             <ul className={styles.nav_links}>
                 <li onClick={() => navigate("/")}>Início</li>
-                <li><a target="__blank" href="#patrocinadores">Patrocinadores</a></li>
-                <li><a target="__blank" href="https://sescomp.com.br/2024/">Programação</a></li>
+                <li><a href="#patrocinadores">Patrocinadores</a></li>
+                <li><a target="__blank" href="https://www.even3.com.br/viii-sescomp-573076">Programação</a></li>
                 <li className={styles.button}>
                     <a target="__blank" href="https://www.even3.com.br/viii-sescomp-573076">
                         <button>Inscreva-se</button>
@@ -58,8 +58,8 @@ export default function Header() {
             </div>
             <ul>
                 <li onClick={() => navigate("/")}>Início</li>
-                <li><a target="__blank" href="#patrocinadores">Patrocinadores</a></li>
-                <li><a target="__blank" href="https://sescomp.com.br/2024/">Programação</a></li>
+                <li><a href="#patrocinadores">Patrocinadores</a></li>
+                <li><a target="__blank" href="https://www.even3.com.br/viii-sescomp-573076">Programação</a></li>
                 <li className={styles.button}>
                     <a target="__blank" href="https://www.even3.com.br/viii-sescomp-573076">
                         <button>Inscreva-se</button>

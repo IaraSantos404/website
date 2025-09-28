@@ -1,3 +1,20 @@
+.patrocinadores{
+  position: relative;
+  padding-bottom: 5em;
+}
+
+.patrocinadores > .decoration1{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.patrocinadores > .decoration2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
 .background{
   background-color: #3F37CA;
   width: 318.058px;
@@ -43,6 +60,7 @@
   font-weight: 400;
   line-height: 150%; 
   letter-spacing: -0.16px;
+  margin-top: 3em;
 }
 
 .logos{
@@ -51,7 +69,7 @@
   justify-content: center;
   align-items: center;
   gap: 2.5em;
-  margin: 2em 0;
+  margin: 2.5em 0;
 }
 
 .logos img{

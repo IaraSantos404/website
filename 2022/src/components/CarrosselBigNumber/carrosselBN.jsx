@@ -7,6 +7,7 @@ import "swiper/css/autoplay";
 
 import { SlRocket } from "react-icons/sl";
 import { FaAsterisk } from "react-icons/fa";
+import Trav from "./../../assets/-.svg"
 import Icon from "./icon.png"
 import { Autoplay, FreeMode } from "swiper/modules";
 
@@ -15,6 +16,14 @@ export default function CarrosselBN() {
     { comp: <img src={Icon} alt="Icon" style={{ width: "40px", height: "40px" }} />, bg: "#4828AB" },
     { comp: <SlRocket size={40} color="#fff" />, bg: "#68a063" },
     { comp: <span>20</span>, bg: "#17BFD3" },
+    { comp: <FaAsterisk size={40} color="#fff" />, bg: "#F14D7C" },
+    { comp: <img src={Icon} alt="Icon" style={{ width: "40px", height: "40px" }} />, bg: "#4828AB" },
+    { comp: <SlRocket size={40} color="#fff" />, bg: "#68a063" },
+    { comp: <img src={Trav} alt="Trav" style={{ width: "40px", height: "40px" }} />, bg: "#17BFD3" },
+    { comp: <FaAsterisk size={40} color="#fff" />, bg: "#F14D7C" },
+    { comp: <img src={Icon} alt="Icon" style={{ width: "40px", height: "40px" }} />, bg: "#4828AB" },
+    { comp: <SlRocket size={40} color="#fff" />, bg: "#68a063" },
+    { comp: <span>23</span>, bg: "#17BFD3" },
     { comp: <FaAsterisk size={40} color="#fff" />, bg: "#F14D7C" },
   ];
 
@@ -29,7 +38,7 @@ export default function CarrosselBN() {
           delay: 0,
           disableOnInteraction: false,
         }}
-        speed={2000}
+        speed={2500}
         freeMode={true}
       >
         {Array(10) 
