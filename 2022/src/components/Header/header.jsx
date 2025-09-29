@@ -13,8 +13,9 @@ export default function Header() {
     <>
         <header id={styles.header}>
             <nav className={styles.nav_container}>
-        
+
             <img
+            onClick={() => navigate("/")}
             src={LogoSescomp}
             alt="Logo da sescomp"
             className={styles.logoSescomp}
