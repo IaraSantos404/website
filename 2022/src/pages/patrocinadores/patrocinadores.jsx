@@ -8,6 +8,8 @@ import Oboticaro from "./../../assets/patrocinios/oboticaro.svg"
 import Armagedom from "./../../assets/patrocinios/armagedom.svg"
 import DevGirl from "./../../assets/patrocinios/dev girls.svg"
 import Fisk from "./../../assets/patrocinios/fisk-logo-1 1.svg"
+import Bluey from "./../../assets/patrocinios/bluey.png"
+import Hackcariri from "./../../assets/patrocinios/hackcariri.png"
 
 import Decoration from "./../../assets/decoration.svg"
 
@@ -26,9 +28,6 @@ export default function Patrocinadores() {
         <div className={Styles.logos}>
           <a target="_blank" href="https://www.alura.com.br/">
             <img src={Alura} alt="logo da alura" />
-          </a>
-          <a target="_blank" href="https://www.yeloo.com.br/">
-            <img src={Yello} alt="logo da yeloo" />
           </a>
 
           <a target="_blank" href="https://rocketseat.com.br/">
@@ -59,11 +58,20 @@ export default function Patrocinadores() {
 
         <p className={Styles.text}>Parceiros</p>
         <div className={Styles.logos}>
+          <a target="_blank" href="https://www.blueyhub.com.br/">
+            <img src={Bluey} alt="logo da bluey" />
+          </a>
+          <a target="_blank" href="https://www.yeloo.com.br/">
+            <img src={Yello} alt="logo da yeloo" />
+          </a>
           <a target="_blank" href="https://www.instagram.com/armagedomsuplementos">
             <img src={Armagedom} alt="logo da armagedom" />
           </a>
           <a target="_blank" href="https://www.developergirls.com.br/">
             <img src={DevGirl} alt="logo da developer girl" />
+          </a>
+          <a target="_blank" href="https://www.hackincariri.com.br/">
+            <img src={Hackcariri} alt="logo da hackincariri" />
           </a>
         </div>
 
